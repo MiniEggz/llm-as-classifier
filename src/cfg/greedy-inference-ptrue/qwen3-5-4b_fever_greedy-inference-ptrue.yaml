@@ -1,0 +1,7 @@
+results_file: "results/qwen3-5-4b_fever_greedy-inference-no-conf.csv"
+dataset: "fever"
+split: "test"
+
+model_name: "Qwen/Qwen3.5-4B"
+
+conf_csv: "results/qwen3-5-4b_fever_greedy-inference-ptrue.csv"

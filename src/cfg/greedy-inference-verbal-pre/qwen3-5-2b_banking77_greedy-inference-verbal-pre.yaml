@@ -1,0 +1,15 @@
+testing: false
+dataset: "banking77" # mmlu, pmqa, banking77
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3.5-2B"
+classifier_name: "greedy-inference-verbal"
+confidence_method: null
+
+# prompts
+sys_prompt: "pre_conf_sys_prompt"
+user_prompt: "pre_conf_user_prompt"
+
+# output
+preds_csv: "results/qwen3-5-2b_banking77_greedy-inference-verbal-pre.csv" # model name, dataset, classifier, confidence

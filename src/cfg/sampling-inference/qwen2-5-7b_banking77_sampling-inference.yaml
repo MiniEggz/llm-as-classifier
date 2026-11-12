@@ -1,0 +1,15 @@
+testing: false
+dataset: "banking77" # mmlu, pmqa, banking77
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen2.5-7B-Instruct"
+classifier_name: "sampling-classifier"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+preds_csv: "results/qwen2-5-7b_banking77_sampling-inference.csv" # model name, dataset, classifier, confidence

@@ -1,0 +1,7 @@
+results_file: "results/qwen2-5-7b_clinc150_greedy-inference-no-conf.csv"
+dataset: "clinc150" # mmlu, pmqa, clinc150
+split: "test"
+
+model_name: "Qwen/Qwen2.5-7B-Instruct"
+
+conf_csv: "results/qwen2-5-7b_clinc150_greedy-inference-ptrue.csv"

@@ -1,0 +1,15 @@
+testing: false
+dataset: "banking77" # mmlu, pmqa, banking77
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3.5-9B"
+
+# prompts
+prompt_appendix: ""
+prefill_json: true
+sys_prompt: "single_json_sys_prompt"
+user_prompt: "single_json_user_prompt"
+
+# output
+run_name: "qwen3-5-9b_banking77_create-tree-greedy-json"

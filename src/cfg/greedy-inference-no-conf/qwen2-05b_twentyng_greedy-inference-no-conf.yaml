@@ -1,0 +1,15 @@
+testing: false
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen2-0.5B-Instruct"
+classifier_name: "greedy-inference-no-conf"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+preds_csv: "results/qwen2-05b_twentyng_greedy-inference-no-conf.csv" # model name, dataset, classifier, confidence

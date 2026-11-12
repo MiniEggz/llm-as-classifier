@@ -1,0 +1,13 @@
+testing: false
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3-14B"
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+run_name: "qwen3-14b_twentyng_create-tree-greedy"

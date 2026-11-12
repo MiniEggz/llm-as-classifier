@@ -1,0 +1,13 @@
+testing: false
+dataset: "sst5" # mmlu, pmqa, sst5
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3-14B"
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+run_name: "qwen3-14b_sst5_create-tree-greedy"

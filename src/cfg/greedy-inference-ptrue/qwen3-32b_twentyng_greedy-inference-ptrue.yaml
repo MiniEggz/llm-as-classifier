@@ -1,0 +1,7 @@
+results_file: "results/qwen3-32b_twentyng_greedy-inference-no-conf.csv"
+dataset: "twentyng"
+split: "test"
+
+model_name: "Qwen/Qwen3-32B"
+
+conf_csv: "results/qwen3-32b_twentyng_greedy-inference-ptrue.csv"

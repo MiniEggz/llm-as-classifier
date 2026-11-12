@@ -1,0 +1,7 @@
+results_file: "results/gemma4-31b_clinc150_greedy-inference-no-conf.csv"
+dataset: "clinc150"
+split: "test"
+
+model_name: "google/gemma-4-31B-it"
+
+conf_csv: "results/gemma4-31b_clinc150_greedy-inference-ptrue.csv"

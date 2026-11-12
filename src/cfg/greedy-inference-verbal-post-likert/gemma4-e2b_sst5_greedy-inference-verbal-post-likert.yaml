@@ -1,0 +1,15 @@
+testing: false
+dataset: "sst5" # mmlu, pmqa, sst5
+split: "test" # train, dev, test
+
+# model
+model_name: "google/gemma-4-E2B-it"
+classifier_name: "greedy-inference-verbal"
+confidence_method: null
+
+# prompts
+sys_prompt: "post_conf_sys_prompt_likert"
+user_prompt: "post_conf_user_prompt_likert"
+
+# output
+preds_csv: "results/gemma4-e2b_sst5_greedy-inference-verbal-post-likert.csv" # model name, dataset, classifier, confidence

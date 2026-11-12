@@ -1,0 +1,21 @@
+testing: false
+dataset: "sst5" # mmlu, pmqa, sst5
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen2-0.5B-Instruct"
+classifier_name: "greedy-inference-verbal"
+confidence_method: null
+
+# prompts
+sys_prompt: "pre_conf_sys_prompt_abc"
+user_prompt: "pre_conf_user_prompt_abc"
+
+# output
+adapter_dict:
+  A: "very negative"
+  B: "negative"
+  C: "neutral"
+  D: "positive"
+  E: "very positive"
+preds_csv: "results/qwen2-05b_sst5_greedy-inference-verbal-pre-abc.csv" # model name, dataset, classifier, confidence

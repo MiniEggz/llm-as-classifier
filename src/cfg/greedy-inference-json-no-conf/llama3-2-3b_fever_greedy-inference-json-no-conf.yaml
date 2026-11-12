@@ -1,0 +1,15 @@
+testing: false
+dataset: "fever" # mmlu, pmqa, fever
+split: "test" # train, dev, test
+
+# model
+model_name: "meta-llama/Llama-3.2-3B-Instruct"
+classifier_name: "greedy-inference-json-no-conf"
+confidence_method: null
+
+# prompts
+sys_prompt: "single_json_sys_prompt"
+user_prompt: "single_json_user_prompt"
+
+# output
+preds_csv: "results/llama3-2-3b_fever_greedy-inference-json-no-conf.csv" # model name, dataset, classifier, confidence

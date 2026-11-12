@@ -1,0 +1,7 @@
+results_file: "results/qwen2-05b_twentyng_greedy-inference-no-conf.csv"
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test"
+
+model_name: "Qwen/Qwen2-0.5B-Instruct"
+
+conf_csv: "results/qwen2-05b_twentyng_greedy-inference-ptrue.csv"

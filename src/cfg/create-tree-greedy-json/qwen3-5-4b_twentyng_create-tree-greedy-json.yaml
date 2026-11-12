@@ -1,0 +1,15 @@
+testing: false
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3.5-4B"
+
+# prompts
+prompt_appendix: ""
+prefill_json: true
+sys_prompt: "single_json_sys_prompt"
+user_prompt: "single_json_user_prompt"
+
+# output
+run_name: "qwen3-5-4b_twentyng_create-tree-greedy-json"

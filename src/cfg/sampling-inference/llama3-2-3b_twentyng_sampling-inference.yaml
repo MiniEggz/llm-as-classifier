@@ -1,0 +1,15 @@
+testing: false
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test" # train, dev, test
+
+# model
+model_name: "meta-llama/Llama-3.2-3B-Instruct"
+classifier_name: "sampling-classifier"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+preds_csv: "results/llama3-2-3b_twentyng_sampling-inference.csv" # model name, dataset, classifier, confidence
