@@ -1,0 +1,15 @@
+testing: false
+dataset: "sst5" # mmlu, pmqa, sst5
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3.5-4B"
+classifier_name: "sampling-classifier"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+preds_csv: "results/qwen3-5-4b_sst5_sampling-inference.csv" # model name, dataset, classifier, confidence

@@ -1,0 +1,15 @@
+testing: false
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test" # train, dev, test
+
+# model
+model_name: "google/gemma-4-E4B-it"
+classifier_name: "sampling-classifier"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+preds_csv: "results/gemma4-e4b_twentyng_sampling-inference.csv" # model name, dataset, classifier, confidence

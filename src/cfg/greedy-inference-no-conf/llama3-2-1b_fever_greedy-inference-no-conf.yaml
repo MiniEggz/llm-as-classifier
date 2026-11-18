@@ -1,0 +1,15 @@
+testing: false
+dataset: "fever" # mmlu, pmqa, fever
+split: "test" # train, dev, test
+
+# model
+model_name: "meta-llama/Llama-3.2-1B-Instruct"
+classifier_name: "greedy-inference-no-conf"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+preds_csv: "results/llama3-2-1b_fever_greedy-inference-no-conf.csv" # model name, dataset, classifier, confidence

@@ -1,0 +1,19 @@
+testing: false
+dataset: "fever" # mmlu, pmqa, fever
+split: "test" # train, dev, test
+
+# model
+model_name: "google/gemma-4-E2B-it"
+
+# prompts
+prompt_appendix: ""
+prefill_json: true
+sys_prompt: "single_json_sys_prompt_abc"
+user_prompt: "single_json_user_prompt_abc"
+
+# output
+adapter_dict:
+  A: "SUPPORTS"
+  B: "REFUTES"
+  C: "NOT ENOUGH INFO"
+preds_csv: "results/gemma4-e2b_fever_json-abc.csv" # model name, dataset, classifier, confidence

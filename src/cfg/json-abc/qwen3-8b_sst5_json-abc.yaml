@@ -1,0 +1,21 @@
+testing: false
+dataset: "sst5" # mmlu, pmqa, sst5
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3-8B"
+
+# prompts
+prompt_appendix: ""
+prefill_json: true
+sys_prompt: "single_json_sys_prompt_abc"
+user_prompt: "single_json_user_prompt_abc"
+
+# output
+adapter_dict:
+  A: "very negative"
+  B: "negative"
+  C: "neutral"
+  D: "positive"
+  E: "very positive"
+preds_csv: "results/qwen3-8b_sst5_json-abc.csv" # model name, dataset, classifier, confidence

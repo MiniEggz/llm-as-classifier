@@ -1,0 +1,15 @@
+testing: false
+dataset: "clinc150" # mmlu, pmqa, clinc150
+split: "test" # train, dev, test
+
+# model
+model_name: "meta-llama/Llama-3.2-3B-Instruct"
+classifier_name: "greedy-inference-verbal"
+confidence_method: null
+
+# prompts
+sys_prompt: "post_conf_sys_prompt"
+user_prompt: "post_conf_user_prompt"
+
+# output
+preds_csv: "results/llama3-2-3b_clinc150_greedy-inference-verbal-post.csv" # model name, dataset, classifier, confidence

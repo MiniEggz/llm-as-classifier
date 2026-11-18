@@ -1,0 +1,15 @@
+testing: false
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3-32B"
+classifier_name: "greedy-inference-verbal"
+confidence_method: null
+
+# prompts
+sys_prompt: "pre_conf_sys_prompt_likert"
+user_prompt: "pre_conf_user_prompt_likert"
+
+# output
+preds_csv: "results/qwen3-32b_twentyng_greedy-inference-verbal-pre-likert.csv" # model name, dataset, classifier, confidence

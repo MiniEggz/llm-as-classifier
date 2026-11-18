@@ -1,0 +1,15 @@
+testing: false
+dataset: "fever" # mmlu, pmqa, fever
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen2-0.5B-Instruct"
+classifier_name: "greedy-inference-verbal"
+confidence_method: null
+
+# prompts
+sys_prompt: "post_conf_sys_prompt"
+user_prompt: "post_conf_user_prompt"
+
+# output
+preds_csv: "results/qwen2-05b_fever_greedy-inference-verbal-post.csv" # model name, dataset, classifier, confidence

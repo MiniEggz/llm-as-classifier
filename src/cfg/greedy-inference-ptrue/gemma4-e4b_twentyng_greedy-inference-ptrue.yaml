@@ -1,0 +1,7 @@
+results_file: "results/gemma4-e4b_twentyng_greedy-inference-no-conf.csv"
+dataset: "twentyng"
+split: "test"
+
+model_name: "google/gemma-4-E4B-it"
+
+conf_csv: "results/gemma4-e4b_twentyng_greedy-inference-ptrue.csv"

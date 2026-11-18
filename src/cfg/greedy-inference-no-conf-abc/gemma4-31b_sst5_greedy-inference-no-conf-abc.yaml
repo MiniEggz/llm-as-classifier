@@ -1,0 +1,21 @@
+testing: false
+dataset: "sst5" # mmlu, pmqa, sst5
+split: "test" # train, dev, test
+
+# model
+model_name: "google/gemma-4-31B-it"
+classifier_name: "greedy-inference-no-conf"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt_abc"
+user_prompt: "simple_template_abc"
+
+# output
+adapter_dict:
+  A: "very negative"
+  B: "negative"
+  C: "neutral"
+  D: "positive"
+  E: "very positive"
+preds_csv: "results/gemma4-31b_sst5_greedy-inference-no-conf-abc.csv" # model name, dataset, classifier, confidence

@@ -1,0 +1,15 @@
+testing: false
+dataset: "sst5" # mmlu, pmqa, sst5
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3.5-9B"
+classifier_name: "greedy-inference-verbal"
+confidence_method: null
+
+# prompts
+sys_prompt: "pre_conf_sys_prompt_likert"
+user_prompt: "pre_conf_user_prompt_likert"
+
+# output
+preds_csv: "results/qwen3-5-9b_sst5_greedy-inference-verbal-pre-likert.csv" # model name, dataset, classifier, confidence

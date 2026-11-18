@@ -1,0 +1,36 @@
+testing: false
+dataset: "twentyng" # mmlu, pmqa, twentyng
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3.5-9B"
+classifier_name: "greedy-inference-json-no-conf"
+confidence_method: null
+
+# prompts
+sys_prompt: "single_json_sys_prompt_abc"
+user_prompt: "single_json_user_prompt_abc"
+
+# output
+adapter_dict:
+  A: "alt.atheism"
+  B: "comp.graphics"
+  C: "comp.os.ms-windows.misc"
+  D: "comp.sys.ibm.pc.hardware"
+  E: "comp.sys.mac.hardware"
+  F: "comp.windows.x"
+  G: "misc.forsale"
+  H: "rec.autos"
+  I: "rec.motorcycles"
+  J: "rec.sport.baseball"
+  K: "rec.sport.hockey"
+  L: "sci.crypt"
+  M: "sci.electronics"
+  N: "sci.med"
+  O: "sci.space"
+  P: "soc.religion.christian"
+  Q: "talk.politics.guns"
+  R: "talk.politics.mideast"
+  S: "talk.politics.misc"
+  T: "talk.religion.misc"
+preds_csv: "results/qwen3-5-9b_twentyng_greedy-inference-json-no-conf-abc.csv" # model name, dataset, classifier, confidence

@@ -1,0 +1,15 @@
+testing: false
+dataset: "clinc150" # mmlu, pmqa, clinc150
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3-8B"
+classifier_name: "greedy-inference-no-conf"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt"
+user_prompt: "simple_template"
+
+# output
+preds_csv: "results/qwen3-8b_clinc150_greedy-inference-no-conf.csv" # model name, dataset, classifier, confidence

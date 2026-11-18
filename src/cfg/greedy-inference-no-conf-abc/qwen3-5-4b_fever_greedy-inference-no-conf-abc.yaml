@@ -1,0 +1,19 @@
+testing: false
+dataset: "fever" # mmlu, pmqa, fever
+split: "test" # train, dev, test
+
+# model
+model_name: "Qwen/Qwen3.5-4B"
+classifier_name: "greedy-inference-no-conf"
+confidence_method: null
+
+# prompts
+sys_prompt: "sys_prompt_abc"
+user_prompt: "simple_template_abc"
+
+# output
+adapter_dict:
+  A: "SUPPORTS"
+  B: "REFUTES"
+  C: "NOT ENOUGH INFO"
+preds_csv: "results/qwen3-5-4b_fever_greedy-inference-no-conf-abc.csv" # model name, dataset, classifier, confidence
